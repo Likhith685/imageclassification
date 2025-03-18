@@ -1,0 +1,120 @@
+/* Apply styles to the entire app */
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Arial', sans-serif;
+}
+h1{
+    color: white;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+/* Scrolling Image Section */
+.scrolling {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #767676;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  .scrolling-wrapper {
+    display: flex;
+    animation: scroll 15s linear infinite;
+  }
+  
+  .scroll-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(247, 153, 153, 0.2);
+  }
+  .head{
+   text-align: center;
+   color: white;
+   letter-spacing: 1px;
+  }
+  
+  /* Continuous Scrolling Animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+/* Container for the classifier */
+.app-1 {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Title styling */
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description paragraph */
+p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* File input styling */
+input[type="file"] {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+/* Button styling with hover effect */
+button {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    background: #2575fc;
+    transform: scale(1.05);
+}
+
+/* Image preview */
+.image-preview {
+    margin: 12px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
