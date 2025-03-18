@@ -1,3 +1,3 @@
-Image Classication Using Convolution Neural Networks
+Image Classification Using Convolution Neural Networks
 
 ML framework :- PYTORCH
